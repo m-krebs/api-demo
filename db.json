@@ -1,12 +1,21 @@
 {
-  "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 1 }
+  "CVE": [
+    { "Target": "php-app/composer.lock", "Vulnerabilities": null },
+    { "Target": "node-app/package-lock.json", "Vulnerabilities": [
+      {
+        "VulnerabilityID": "CVE-2018-1648",
+        "PkgName": "lodash",
+        "InstalledVersion": "4.17.4",
+        "FixedVersion": ">4.17.11",
+        "Title": "lodash: Prototype pollution in utilites function",
+        "Description": "A prototype pollution vulnerability was found in lodash <4.17.11 where blabla",
+        "Severity": "HIGH",
+        "References": [
+          "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-16487"
+        ]
+      }
+    ] },
+    { "Target": "java-app/maven.yaml", "Vulnerabilities": null }
   ],
   "profile": {
     "name": "typicode"
